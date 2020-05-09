@@ -1,6 +1,6 @@
 # require modules here
 require "yaml"
-eed_file = Rails.root.join('db', 'seeds', 'categories.yml')
+seed_file = Rails.root.join('lib', 'translator', 'emoticons.yml')
 config = YAML::load_file(seed_file)
 Category.create!(config)
 
