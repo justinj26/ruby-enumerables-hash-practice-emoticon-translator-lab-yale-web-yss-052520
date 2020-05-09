@@ -7,7 +7,7 @@ def load_library(file_path = 'lib/emoticons.yml')
   new_hash = {}
   library = YAML.load_file(file_path)
   library.map do |(key, value)|
-   new_hash[key] << {
+   new_hash[key] = {
      :english => value[0],
      :japanse => value[1]
    }
