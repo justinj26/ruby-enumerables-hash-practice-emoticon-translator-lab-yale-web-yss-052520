@@ -1,8 +1,6 @@
 # require modules here
 require "yaml"
-seed_file = Rails.root.join('lib', 'translator', 'emoticons.yml')
-config = YAML::load_file(seed_file)
-Category.create!(config)
+
 
 def load_library(file_path)
   # code goes here
