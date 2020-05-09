@@ -12,7 +12,7 @@ def load_library(file_path = 'lib/emoticons.yml')
      :japanse => value[1]
    }
    end
-   binding.pry
+   
    new_hash
 end
 
