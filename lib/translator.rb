@@ -12,8 +12,8 @@ def load_library(file_path = 'emoticons.yml')
      :japanse => value[1]
    }
    end
+   binding_pry
    new_hash
-   binding.pry 
 end
 
 def get_japanese_emoticon(file_path, english_emoticon)
