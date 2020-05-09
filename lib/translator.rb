@@ -18,7 +18,7 @@ end
 
 def get_japanese_emoticon(file_path, english_emoticon)
   # code goes here
-  load_library(filepath).select do |(key, value)|
+  load_library(file_path).select do |(key, value)|
     value[:english] == english_emoticon
     return value[:japanese_emoticon]
  end  
