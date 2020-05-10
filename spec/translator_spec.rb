@@ -1,4 +1,4 @@
-require 'pry'
+
 require 'yaml'
 describe "#load_library" do
 let(:emoticons) { ['angel', 'angry', 'bored', 'confused', 'embarrassed', 'fish', 'glasses', 'grinning', 'happy', 'kiss', 'sad', 'surprised', 'wink'] }
