@@ -19,18 +19,20 @@ end
 def get_japanese_emoticon(file_path, english_emoticon)
   # code goes here
   library = load_library(file_path)
-  library.select do |(key, value)|
-    value[:english] == english_emoticon
+  library.each do |(key, value)|
+    if value[:english] == english_emoticon
     return value[:japanese_emoticon]
- end  
+    end
+  end  
 end
 
 def get_english_meaning(file_path, japanese_emoticon)
   # code goes here
   library = load_library(file_path)
-  library.select do |(key, value)|
-    value[:japanese] == japanese_emoticon
-   return key
+  library.each do |(key, value)|
+    if value[:japanese] == japanese_emoticon
+    return key
+    end
   end
   
 end
